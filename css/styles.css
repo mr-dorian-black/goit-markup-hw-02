@@ -1,17 +1,64 @@
+:root {
+  --main-text-color: #2e2f42;
+  --hover-link-color: #404bbf;
+  --button-default-background: #4d5ae5;
+  --button-hover-background: #404bbf;
+  --filter-button-default-background: #f4f4fd;
+  --filter-button-default-color: #4d5ae5;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #2e2f42;
+  color: var(--main-text-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-p {
-  color: #434455;
-  font-size: 16px;
-}
-
-h3 {
+.title {
   font-size: 20px;
 }
 
-button {
+.button {
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.link,
+.address {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: var(--hover-link-color);
+}
+
+.address:hover {
+  color: var(--hover-link-color);
+}
+
+.hero .button {
+  color: white;
+  background-color: var(--button-default-background);
+  width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.filter-list .button {
+  color: var(--filter-button-default-color);
+  background-color: var(--filter-button-default-background);
+  width: 116px;
+  height: 48px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: var(--button-hover-background);
+  color: white;
 }
