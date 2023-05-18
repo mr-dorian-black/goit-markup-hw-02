@@ -132,6 +132,7 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--main-text-color);
+  letter-spacing: 0.02em;
 }
 
 .section-team {
